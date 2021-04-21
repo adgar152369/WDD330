@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/code_example.css">
+    <title>W01 Code</title>
+</head>
+<body>
+    <h1>Story Editor</h1>
+    Story Name: <input type="text" id="name_input">
+    <section>
+        <button onclick="loadStory()">Find and Edit It</button>
+        <button onclick="saveStory()">Save It</button>
+        <button onclick="displayStory()">Display It</button>
+    </section>
+    <textarea  cols="150" rows="15" id="story_editor" placeholder="Write your awesome story here."></textarea> 
+
+    <section id="story_display"></section>
+    <script>
+        function loadStory() {
+            var storyName = document.getElementById('name_input').value;
+            var storyHTML = localStorage.getItem(storyName);
+            document.getElementById('story_editor').value = storyHTML;
+        }
+        function saveStory() {
+            var storyName = document.getElementById('name_input').value;
+            var storyHTML = document.getElementById('story_editor').value;
+            localStorage.setItem(storyName, storyHTML);
+        }
+        function displayStory() {
+            var storyHTML = document.getElementById('story_editor').value;
+            document.getElementById('story_display').innerHTML = storyHTML;
+        }
+    </script>
+</body>
+</html>

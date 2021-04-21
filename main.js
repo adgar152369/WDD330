@@ -11,12 +11,14 @@ const links = [
     }
 ];
 
+// loop through each item in list
 for (let link in links) {
     console.log(`${links[link].label}`)
     //create new elements
     let li = document.createElement('li');
     let a = document.createElement('a');
 
+    // add url to href for each link
     a.innerHTML = links[link].label;
     a.href = links[link].url;
     a.target ='_blank';

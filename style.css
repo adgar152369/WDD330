@@ -8,15 +8,47 @@
 }
 
 header {
-    background-color: #defaff;
-    padding: 15px;
+    padding: 25px 15px;
 }
 
 header h1 {
     font-weight: 900;
     font-size: 45px;
+    color: #434343;
+    letter-spacing: 3px;
 }
 
 h2 {
     font-size: 32px;
+    color: rgb(19, 97, 9);
+}
+
+/* showcase (list and main body) */
+.showcase {
+    margin: 25px 20px;
+}
+
+.showcase h2 {
+    margin-left: 1px;
+}
+
+.ol1 {
+    line-height: 32px;
+    margin: 15px 40px;
+    counter-reset: item;
+}
+
+.ol1 li {
+    list-style-type: none;
+    counter-increment: item;
+}
+
+.ol1 li:before {
+    content: counter(item)") ";
+    font-weight: bold;
+}
+
+.ol1 a {
+    color: #4f4f4f;
+    margin-left: 5px;
 }
