@@ -7,6 +7,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    background-color: #fff;
+}
+
 header {
     padding: 25px 15px;
 }

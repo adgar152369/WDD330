@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Step 1 -->
+    <input id="user-input" type="text">
+    <button onclick="sumOfNumbers()">submit</button>
+
+    <!-- Step 3 -->
+    <input id="user-num" type="text">
+    <button onclick="addNumbers()">+</button>
+    <div id="display"></div>
+
+    <script>
+        
+        function displayContent() {
+            const input = document.getElementById('user-input').value;
+            document.getElementById('display').innerHTML = input;
+        }
+
+        function sumOfNumbers() {
+            const input = parseInt(document.getElementById('user-input').value);
+            let sum = 0;
+            for (let i = 0; i <= input; i++) {
+                sum += i;
+            }
+            document.getElementById('display').innerHTML = sum;
+        }
+
+        function addNumbers() {
+            const input1 = parseInt(document.getElementById('user-input').value);
+            const input2 = parseInt(document.getElementById('user-num').value);
+
+            let sum = input1 + input2;
+
+            document.getElementById('display').innerHTML = sum;
+
+        }
+    </script>
+</body>
+</html>
