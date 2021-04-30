@@ -8,6 +8,7 @@
 </head>
 <body>
     <!-- Step 1 -->
+    <!-- Step 2 -->
     <input id="user-input" type="text">
     <button onclick="sumOfNumbers()">submit</button>
 
@@ -17,12 +18,13 @@
     <div id="display"></div>
 
     <script>
-        
+        // Step 01
         function displayContent() {
             const input = document.getElementById('user-input').value;
             document.getElementById('display').innerHTML = input;
         }
 
+        // Step 02
         function sumOfNumbers() {
             const input = parseInt(document.getElementById('user-input').value);
             let sum = 0;
@@ -32,6 +34,7 @@
             document.getElementById('display').innerHTML = sum;
         }
 
+        // Step 03
         function addNumbers() {
             const input1 = parseInt(document.getElementById('user-input').value);
             const input2 = parseInt(document.getElementById('user-num').value);
