@@ -7,6 +7,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    background-color: rgb(233, 231, 215);
+}
+
 header {
     padding: 25px 15px;
 }
@@ -31,4 +35,9 @@ h2, h3 {
 ul li {
     margin-left: 45px;
     line-height: 25px;
+}
+
+.notes-header {
+    color: red;
+    margin-top: 50px;
 }
