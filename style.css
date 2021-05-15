@@ -24,7 +24,20 @@ header h1 {
 
 h2 {
     font-size: 32px;
+    color: rgb(221, 190, 12);
+}
+
+h2, h3 {
+    margin: 20px 0 15px 25px;
     color: rgb(19, 97, 9);
+}
+
+ul {
+    margin: 10px 15px 25px 50px;
+}
+
+ul li {
+    line-height: 25px;
 }
 
 /* showcase (list and main body) */
@@ -55,4 +68,12 @@ h2 {
 .ol1 a {
     color: #4f4f4f;
     margin-left: 5px;
+}
+
+.code-link {
+    margin: 25px;
+}
+
+.questions-list li {
+    color: blue;
 }

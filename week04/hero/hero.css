@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(45deg, red, yellow);
+}
+
+form {
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .5);
+    padding: 15px;
+    background-color: #fff;
+    margin: 15px;
+}
+
+.header-centered {
+    text-align: center;
+}
+
+form div{
+    display: block;
+    margin: 25px 0 25px 0;
+}
+
+form p {
+    font-weight: 700;
+}
+
+form input[type=text], input[type=password], textarea {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.big {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.hero-name label {
+    margin-right: 15px;
+}
+
+form input, textarea {
+    border-radius: 10px;
+    border: solid 1px lightgrey;
+    font-size: 16px;
+}
+
+.story textarea{
+    display: block;
+}
+
+form button {
+    border: solid 1px blue;
+    background: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    width: 150px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
