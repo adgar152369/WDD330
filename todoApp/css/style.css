@@ -1,0 +1,113 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(125, 234, 248);
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, .task-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.user-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.user-input-container button {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: orange;
+    padding: 5px 15px;
+    height: 37px;
+    box-shadow: 0 5px 10px -7px rgba(0,0,0,.5);
+}
+
+.user-input-container button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 196, 0);
+}
+
+.user-input-container, .filter-container {
+    text-align: center;
+}
+
+.task-container {
+    background-color: #fff;
+    padding: 10px 15px;
+    height: 300px;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
+    border-radius: 5px;
+    margin: 25px 5px;
+    overflow: scroll;
+}
+
+.filter-btns {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-btns button {
+    background: rgb(59, 57, 190);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px 10px auto;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px -7px rgba(0,0,0,.5);
+    color: #fff;
+}
+
+.filter-btns button:hover {
+    cursor: pointer;
+    background-color: rgb(72, 69, 224);
+}
+
+/* list item classes CSS */
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item button {
+    border: none;
+    background: red;
+    color: #fff;
+}
+
+.list-item button:hover {
+    cursor: pointer;
+}
+
+.list-item button:active {
+    color: black;
+}
+

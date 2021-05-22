@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Week 05</title>
+</head>
+<body>
+    <header>
+        <h1>Week 05 Notes and Code</h1>
+    </header>
+    <h2>Chapter 10: Testing and Debugging</h2>
+    <ul>
+        <li>Errors, exceptions, and warnings</li>
+        <li>Testing and Debugging</li>
+        <li>Strict Mode</li>
+        <li>Debugging in Browser</li>
+        <li>Error objects</li>
+        <li>Throwing exceptions</li>
+        <li>Exception handling</li>
+        <li>Testing frameworks</li>
+    </ul>
+    <h3>Exceptions</h3>
+    <ul>
+        <li>An error that produces a return value which can be used by program to deal with the error</li>
+        <li>Exception will produce a <strong>stack trace</strong></li>
+        <li>Strack trace is a sequence of function or method calls that leads to where the error occured</li>
+        <li>Will work backwards from the point at which the error occurred to identify the function that started the sequence</li>
+    </ul>
+    <h3>Warnings</h3>
+    <ul>
+        <li>Error in the code isn't enough to make a program crash</li>
+        <li>Program will continue to run</li>
+        <li>Program can run incorrectly</li>
+    </ul>
+    <h3>Strict Mode</h3>
+    <ul>
+        <li>Increases chance of errors</li>
+        <li>This helps to spot errors early on</li>
+        <li>Required to use strict mode: 'use strict';</li>
+        <li>Instead of a warning, you will get an exception</li>
+    </ul>
+    <h3>Linting Tools</h3>
+    <ul>
+        <li>Can be used to test the quality of JavaScript code, beyond simply using strict mode</li>
+        <li>Passing a lint test is no guarantee that your code is correct, but it will mean it will be more consistent and less likely to have problems</li>
+    </ul>
+    <h3>Debugging in the Browser</h3>
+    <ul>
+        <li>The point at which an error occurs is not always where it originated, so you’ll need to run through the program to see what’s happening at different stages of its execution</li>
+        <li>Can be useful to create what are known as breakpoints</li>
+        <li>JavaScript environments have a console object that provides a number of methods for logging information and debugging</li>
+    </ul>
+    <h3>Exception Handling</h3>
+    <ul>
+        <li>When an exception occurs, the program terminates with an error message</li>
+        <li>If we suspect a piece of code will result in an exception, we can wrap it in a <strong>try</strong> block</li>
+        <li>Any code placed inside a try block will pass any error objects to a catch block when an exception occurs. </li>
+    </ul>
+</body>
+</html>
