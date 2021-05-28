@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>ToDo App</title>
+    <title>ToDo List</title>
 </head>
 <body>
     <div class="container">
-        <h1>My ToDo List</h1>
-        <div class="user-input-container">
-            <input class="user-input" type="text" placeholder="Add task..." required>
-            <button class="add-btn">+</button>
+        <div class="card-content">
+            <h1 class="card-title">Task List</h1>
+            <form id="task-form">
+                <div class="input-field">
+                    <input type="text" name="task" id="task" placeholder="Add task">
+                </div>
+                <input type="submit" value="Add Task" class="btn">
+            </form>
         </div>
-        <div class="task-container">
-            <div class="task-list-container">
-                <ul class="task-list">
-                </ul>
+        <div class="card-content">
+            <h3 id="task-title">Tasks</h3>
+            <ul class="collection"></ul>
+            <div class="input-field">
+                <input type="text" name="filter" id="filter" placeholder="Filter tasks">
             </div>
         </div>
-        <div class="filter-btns">
-            <button>Completed</button>
-            <button>All</button>
-            <button>Active</button>
-        </div>
-        <div class="filter-container">
-            <span id="num-tasks-left">0</span> tasks left
-            <input type="text" id="filter" placeholder="Filter items">
+        <div class="task-buttons">
+            <button href="#" class="completed-tasks">Completed</button>
+            <button href="#" class="active-tasks">Active</button>
+            <button href="#" class="all-tasks">All</button>
+            <button id="clearBtn" href="#" class="clear-tasks">Clear Tasks</button>
         </div>
     </div>
-
     <script src="./script.js"></script>
 </body>
 </html>

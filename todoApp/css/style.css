@@ -1,113 +1,124 @@
-html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    background-color: rgb(125, 234, 248);
+    background-color: aliceblue;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 55px;
+    color: grey;
 }
 
-h1, .task-container {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin: 10px;
-    font-size: 14px;
-}
-
-.user-input-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-.user-input-container button {
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    background: orange;
-    padding: 5px 15px;
-    height: 37px;
-    box-shadow: 0 5px 10px -7px rgba(0,0,0,.5);
-}
-
-.user-input-container button:hover {
+a {
     cursor: pointer;
-    background-color: rgb(255, 196, 0);
+    text-decoration: none;
 }
 
-.user-input-container, .filter-container {
-    text-align: center;
-}
-
-.task-container {
+.container {
+    box-shadow: 0 10px 15px -10px rgba(0, 0, 0, .5);
+    width: 400px;
+    padding: 30px;
     background-color: #fff;
-    padding: 10px 15px;
-    height: 300px;
-    min-width: 300px;
-    position: relative;
-    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
-    border-radius: 5px;
-    margin: 25px 5px;
-    overflow: scroll;
+    border-radius: 10px;
 }
 
-.filter-btns {
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.input-field {
+    margin: 10px;
 }
 
-.filter-btns button {
-    background: rgb(59, 57, 190);
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    margin: 5px 10px auto;
-    font-size: 14px;
+.btn {
+    margin: 10px;
     padding: 10px;
-    text-align: center;
-    box-shadow: 0 5px 10px -7px rgba(0,0,0,.5);
-    color: #fff;
-}
-
-.filter-btns button:hover {
+    background: none;
+    border: solid 1px black;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(72, 69, 224);
+    transition: all .2s;
 }
 
-/* list item classes CSS */
-.list-item {
+.btn:hover {
+    border: solid 1px rgb(2, 247, 2);
+    color: rgb(2, 247, 2);
+}
+
+.input-field input {
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-bottom: solid 1px;
+    transition: all .2s;
+}
+
+.input-field input:focus {
+    outline: none;
+    border-bottom: solid 1px blue;
+}
+
+.collection {
+    list-style-type: none;
+    margin: 45px 0;
+    padding: 0;
+    position: relative;
+}
+
+.collection-item {
     display: flex;
     justify-content: space-between;
+    border-bottom: solid 1px grey;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
-.list-item button {
+.collection-item .checked {
+    position: absolute;
+    right: 60px;
+    font-size: 24px;
+}
+
+.checked-off {
+    text-decoration: line-through;
+}
+
+.collection-item .delete-item {
+    font-size: 24px;
+    transition: all .2s;
+}
+.collection-item .delete-item:hover {
+    color: red;
+}
+
+.card-content {
+    margin-top: 50px;
+}
+
+.task-buttons button {
     border: none;
-    background: red;
-    color: #fff;
-}
-
-.list-item button:hover {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
     cursor: pointer;
+    background-color: lightgrey;
 }
 
-.list-item button:active {
+.task-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#clearBtn {
+    background: none;
     color: black;
+    border: solid 1px black;
+    transition: all .2s;
 }
-
+#clearBtn:hover {
+    color: red;
+    border: solid 1px red;
+}
