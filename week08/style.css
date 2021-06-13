@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 45px;
+    color: #434343;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 32px;
+    color: rgb(221, 190, 12);
+}
+
+h2, h3 {
+    margin: 20px 0 15px 25px;
+    color: rgb(19, 97, 9);
+}
+
+ul {
+    margin: 10px 15px 25px 50px;
+}
+
+ul li {
+    line-height: 25px;
+}
