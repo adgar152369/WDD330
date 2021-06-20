@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Week 09</title>
+</head>
+<body>
+    <header>
+        <h1>Week 09 Notes</h1>
+    </header>
+    <h2>The Browser Object Model</h2>
+    <ul>
+        <li>Collection of properties and methods</li>
+        <li>Properties are made available through the <strong>window</strong> object</li>
+    </ul>
+    <h3>Going Global</h3>
+    <ul>
+        <li>Any global variable created is a property of the <strong>window</strong> object</li>
+        <li>In a browser environment, the global object is the window object</li>
+    </ul>
+    <h3>The Document Object</h3>
+    <ul>
+        <li>Each window object contains a <strong>document</strong> object</li>
+        <li>Contains methods and properties that deal with the page that is loaded into the window</li>
+    </ul>
+    <h3>Cookies</h3>
+    <ul>
+        <li>Small files that are saved locally on a user's computer</li>
+        <li>Keep track of user info, like history, choices, etc.</li>
+        <li>Form of a text file that contain name/value pairs</li>
+    </ul>
+    <h3>Timing Functions</h3>
+    <ul>
+        <li>Schedule the execution of a function at regular invervals or randomly</li>
+        <li><strong>setTimeout()</strong> accepts a callback and number of milliseconds for its parameters</li>
+        <li><strong>setInterval()</strong> will invoke the callback after every given number of milliseconds</li>
+    </ul>
+    <h3>The <i>data-</i> Attribute</h3>
+    <ul>
+        <li>Way of embedding data in a web page using custom attributes that are ignored by the browser</li>
+        <li>Private; not intended to be used by an external service</li>
+        <li>Can be used to ID particular elements</li>
+        <li><strong>dataset</strong> property can be used to access any data- attributes it contains</li>
+        <li>Hyphens are replaced by camel casing while using the dataset object, accessing the properties of data-</li>
+    </ul>
+    <h3>HTML5 APIs</h3>
+    <ul>
+        <li>Give developers access to new features in hardware</li>
+        <li>Web storage API is useful without the restriction of cookies</li>
+        <li>The Geolocation API is used to obtain the geographical position of the device</li>
+        <li>Link to nearby places or measure speed at which the user is moving</li>
+        <li>Property of the navigator object</li>
+    </ul>
+    <h3>Web Workers</h3>
+    <ul>
+        <li>Allow processes to be run in the background</li>
+        <li>Use the <strong>Worker()</strong> constructor function to create a new worker</li>
+        <li><i>const worker = new Worker(js.js);</i></li>
+        <li>This function takes the name of another JS file as an argument</li>
+    </ul>
+</body>
+</html>
