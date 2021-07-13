@@ -36,6 +36,10 @@ const links = [
     {
         label: "Week10",
         url: "week10/index.html"
+    },
+    {
+        label: "Rexipes App",
+        url: "QuixRexipes/index.html"
     }
 ];
 
