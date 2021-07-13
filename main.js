@@ -39,7 +39,7 @@ const links = [
     },
     {
         label: "Rexipes App",
-        url: "QuixRexipes/index.html"
+        url: "RexipesApp/index.html"
     }
 ];
 
